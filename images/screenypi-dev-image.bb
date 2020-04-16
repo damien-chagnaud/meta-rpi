@@ -29,6 +29,10 @@ QT5_DEV_PKGS = " \
     qtvirtualkeyboard-dev \
     qtxmlpatterns-dev \
     qtxmlpatterns-mkspecs \
+	qtwebengine-dev \
+	qtwebengine-mkspecs \
+	qtwebview-dev \
+	qtwebview-mkspecs \
 "
 
 QT5_PKGS = " \
@@ -47,15 +51,18 @@ QT5_PKGS = " \
     qtwebsockets-qmlplugins \
     qtvirtualkeyboard \
     qtxmlpatterns \
+	qtwebengine \
+	qtwebview \
 "
 
-SCREEN = " \
+SCREENYPI = " \
 	screenypi \
 "
 
 IMAGE_INSTALL += " \
     ${QT5_DEV_PKGS} \
     ${QT5_PKGS} \
+	${SCREENYPI} \
 "
 
 export IMAGE_BASENAME = "screenypi-image"
